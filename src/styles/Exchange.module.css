@@ -1,0 +1,279 @@
+.changeWrapper {
+  padding: 0 144px 42px 144px;
+  display: flex;
+  justify-content: space-between;
+  background: #F8F8F8;
+}
+.changeWrapper .changeBlock {
+  width: 370px;
+  border-radius: 12px;
+  background: white;
+}
+.changeWrapper div {
+  width: 370px;
+  background: white;
+}
+
+.nameFormWithIcon {
+  display: flex;
+  text-align: start;
+}
+.nameFormWithIcon .nameForm {
+  font-size: 24px;
+  margin: 13px 0 20px 20px;
+}
+.nameFormWithIcon img {
+  margin-right: 24px;
+}
+
+.currencyWrapper .baseCurrency {
+  border: none;
+  box-shadow: inset 3px 0 0 #FFD50B;
+  border-radius: 6px;
+  height: 54px;
+  width: 310px;
+  font-size: 18px;
+  padding-left: 18px;
+  background-size: 34px, 12px;
+}
+.currencyWrapper .baseCurrency.currencyGive {
+  background: url("../public/bitcoin.svg") no-repeat right 40px bottom 50%, url("../public/arrow.svg") no-repeat #F8F8F8 right 20px bottom 50%;
+}
+.currencyWrapper .baseCurrency.currencyTake {
+  background: url("../public/tether.svg") no-repeat right 40px bottom 50%, url("../public/arrow.svg") no-repeat #F8F8F8 right 20px bottom 50%;
+}
+.currencyWrapper .baseCurrency::-webkit-outer-spin-button, .currencyWrapper .baseCurrency::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.typeCurrencyWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 37px;
+  align-items: center;
+  width: 330px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f5f1f1;
+}
+.typeCurrencyWrapper li {
+  border: 1px solid #F8F8F8;
+  border-radius: 6px;
+  padding: 10px;
+  list-style: none;
+}
+
+.currencyType {
+  color: #979797;
+  display: flex;
+  box-sizing: border-box;
+  padding: 12px 20px 12px 20px;
+  text-align: start;
+}
+.currencyType:after {
+  content: "";
+  width: 100%;
+  margin-left: 8px;
+  margin-bottom: 7px;
+  border-bottom: 1px dashed #767676;
+}
+
+.typeWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.typeWrapper li {
+  padding: 0 0 0 20px;
+  text-align: start;
+  list-style: none;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+.typeWrapper li:active {
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.03), rgba(51, 51, 51, 0.03)), #FFFFFF;
+  box-shadow: inset 4px 0px 0px #FFD50B;
+}
+.typeWrapper li img {
+  width: 24px;
+  height: 24px;
+  margin: 12px 8px 12px 0;
+}
+.typeWrapper li.currencyWithCost {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchWrapper {
+  box-sizing: border-box;
+  padding: 16px 20px;
+  display: flex;
+  border-bottom: 1px solid #f5f1f1;
+}
+.searchWrapper input {
+  padding: 0 0 0 30px;
+  border: 1px #979797 solid;
+  border-radius: 6px;
+  background: url("../public/search-01.svg") no-repeat left 10px bottom 50%, url("../public/cross.svg") no-repeat #F8F8F8 right 14px bottom 50%;
+  width: 100%;
+  height: 37px;
+}
+.searchWrapper input::-ms-clear {
+  display: none;
+}
+
+.fillFormWrapper {
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5f1f1;
+}
+.fillFormWrapper li {
+  width: 370px;
+  display: flex;
+  height: 28px;
+  list-style: none;
+}
+.fillFormWrapper li:nth-child(2n+1) div {
+  background: #F8F8F8;
+}
+.fillFormWrapper li div:nth-child(1) {
+  padding: 0 0 0 20px;
+  text-align: start;
+}
+.fillFormWrapper li div:nth-child(2) {
+  padding: 0 20px 0 0;
+  text-align: end;
+  color: #767676;
+}
+.fillFormWrapper:nth-child(even) {
+  background: #F8F8F8;
+}
+
+.mainForm .checkboxWrapper {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 18px auto;
+  font-size: 12px;
+  color: #979797;
+}
+.mainForm .checkboxWrapper input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  background: #F8F8F8;
+  border: white 5px solid;
+  border-radius: 6px;
+}
+.mainForm button {
+  padding: 0;
+  box-sizing: border-box;
+  width: 330px;
+  height: 54px;
+  font-weight: 600;
+  font-size: 16px;
+  background: #FFD50B;
+  border-radius: 6px;
+  border: none;
+  margin: 0 20px 20px 20px;
+}
+.mainForm .mainFormItem {
+  box-sizing: border-box;
+  height: 43px;
+  width: 330px;
+  padding: 0 0 0 52px;
+  background: #F8F8F8;
+  border: none;
+  box-shadow: inset 3px 0px 0px #FFD50B;
+  border-radius: 6px;
+  margin: 18px 20px 0 18px;
+}
+.mainForm .mainFormItem.error {
+  border: 1px solid #E53B35;
+  box-shadow: inset 3px 0px 0px #E53B35;
+}
+.mainForm .mainFormItem[name] {
+  background-size: 24px;
+}
+.mainForm .mainFormItem[name=geo] {
+  background: url("../public/location_on.svg") #F8F8F8 no-repeat left 18px bottom 50%;
+}
+.mainForm .mainFormItem[name=email] {
+  background: url("../public/mail_outline.svg") #F8F8F8 no-repeat left 18px bottom 50%;
+}
+.mainForm .mainFormItem[name=phone] {
+  background: url("../public/call.svg") #F8F8F8 no-repeat left 18px bottom 50%;
+}
+.mainForm .mainFormItem[name=wallet] {
+  background: url("../public/account_balance_wallet.svg") #F8F8F8 no-repeat left 18px bottom 50%;
+}
+.mainForm .mainFormItem[name=wallet]::-webkit-outer-spin-button, .mainForm .mainFormItem[name=wallet]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.mainForm .mainFormItem[name=comment] {
+  background: url("../public/chat.svg") #F8F8F8 no-repeat left 18px bottom 50%;
+}
+.mainForm .mainFormItem[name=fullname] {
+  background: url("../public/how_to_reg.svg") #F8F8F8 no-repeat left 18px bottom 50%;
+}
+.mainForm .mainFormItem[name=giftcard] {
+  background: url("../public/card_giftcard.svg") #F8F8F8 no-repeat left 18px bottom 50%;
+}
+.mainForm .mainFormItem:focus {
+  box-shadow: inset 3px 0 0 #FFD50B;
+  outline: none;
+  border: 1px #FFD50B solid;
+  border-left: 0;
+}
+.mainForm .mainFormItem:nth-child(1) {
+  margin-top: 20px;
+}
+
+.mainInfoWrapper {
+  display: flex;
+  height: 148px;
+  padding: 0 144px;
+  background: #FFD50B;
+}
+.mainInfoWrapper .mainInfoList {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+.mainInfoWrapper .mainInfoList li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  text-align: start;
+  padding: 0 63px;
+}
+.mainInfoWrapper .mainInfoList li:nth-child(2) {
+  align-self: center;
+  height: 62px;
+  border-right: 1px dashed #333333;
+  border-left: 1px dashed #333333;
+}
+.mainInfoWrapper .mainInfoList li:nth-child(1) {
+  padding-left: 0;
+}
+.mainInfoWrapper .mainInfoList li:nth-child(3) {
+  padding-right: 0;
+}
+.mainInfoWrapper .mainInfoList li span:nth-child(2n+1) {
+  flex: 75.666%;
+  font-style: normal;
+  font-size: 64px;
+  color: #333333;
+  font-weight: 600;
+  padding-right: 20px;
+}
+.mainInfoWrapper .mainInfoList li span:nth-child(2n) {
+  text-align: end;
+}
+
+/*# sourceMappingURL=Exchange.module.css.map */

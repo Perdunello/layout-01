@@ -1,0 +1,141 @@
+.topHeaderWrapper {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  min-height: 56px;
+  padding: 0 144px 0 144px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05), 0px 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.flags {
+  display: flex;
+}
+.flags .language {
+  width: 25.2px;
+  height: 18px;
+  background: yellow;
+  margin-right: 4px;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navList .square {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+  margin: 0 10px 2px 0;
+  border: 1px solid #E5E5E5;
+}
+.navList li {
+  list-style: none;
+  margin: 0 5px;
+  padding: 0 20px;
+}
+.navList li .navItem {
+  text-decoration: none;
+  color: black;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.time img {
+  padding: 12px 24px 12px;
+}
+.time div {
+  padding: 13px 10px 13px 0;
+}
+
+.time__work {
+  color: #979797;
+}
+
+.bottomHeaderWrapper {
+  height: 140px;
+  padding: 0 144px 0 144px;
+  display: flex;
+  gap: 0;
+  align-items: center;
+}
+
+.formLogin {
+  flex: 33.333%;
+  display: flex;
+  justify-content: flex-end;
+}
+.formLogin .baseInput {
+  width: 160px;
+  height: 43px;
+  background: url("../public/login.svg") #F8F8F8 no-repeat 12px;
+  border: none;
+  background-size: 20px 20px;
+  padding: 0 0 0 44px;
+  border-radius: 6px;
+}
+.formLogin .inputLogin {
+  background: url("../public/login.svg") #F8F8F8 no-repeat 12px;
+}
+.formLogin .inputPassword {
+  background: url("../public/password.svg") #F8F8F8 no-repeat 12px;
+  margin: 0 20px;
+}
+.formLogin .buttonEnter {
+  padding: 13px 25px;
+  font-size: 15px;
+  margin-right: 10px;
+  border: 1.5px solid #979797;
+  background: none;
+  border-radius: 6px;
+}
+.formLogin .buttonRegistration {
+  border-radius: 6px;
+  font-size: 15px;
+  background: #FFD50B;
+  border: none;
+  padding: 13px 25px;
+}
+
+.socLinks {
+  display: flex;
+}
+.socLinks li {
+  list-style: none;
+  width: 43px;
+  height: 43px;
+  background: #F8F8F8;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 8px;
+}
+.socLinks li:nth-child(1) {
+  margin: 0;
+}
+
+.warning {
+  font-weight: 700;
+  font-size: 14px;
+  background: #FFD300;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2px;
+}
+.warning img {
+  margin-left: 12px;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

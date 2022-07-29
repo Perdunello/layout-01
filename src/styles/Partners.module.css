@@ -1,0 +1,56 @@
+.mainWrapper {
+  background: #F8F8F8;
+  padding: 0 144px;
+  overflow: hidden;
+}
+
+.titlePartners {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+.partners {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.partners li {
+  mix-blend-mode: luminosity;
+  list-style: none;
+  background: white;
+  padding: 20px;
+  margin-right: 20px;
+}
+.partners li:nth-child(1) {
+  padding-left: 0;
+  background: White;
+}
+.partners li:nth-last-child(1) {
+  padding-right: 0;
+  background: White;
+  margin: 0;
+}
+.partners:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: url("../public/arrow.svg");
+  width: 71px;
+  margin: 0 0 8px 0;
+  text-align: start;
+  transform: rotate(90deg);
+}
+.partners:after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: url("../public/arrow.svg");
+  width: 71px;
+  margin: 0 0 8px 0;
+  text-align: start;
+  transform: rotate(-90deg);
+}
+
+/*# sourceMappingURL=Partners.module.css.map */

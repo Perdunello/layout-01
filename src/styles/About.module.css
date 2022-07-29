@@ -1,0 +1,37 @@
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+}
+.mainWrapper .title {
+  margin: 48px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.mainWrapper .title img {
+  margin-right: 10px;
+}
+.mainWrapper .title div {
+  font-size: 24px;
+  font-weight: 700;
+}
+.mainWrapper .text {
+  width: 1100px;
+  text-align: start;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #FFFFFF, #979797);
+}
+.mainWrapper .text div {
+  text-align: center;
+  color: #FFD50B;
+  margin-bottom: 48px;
+}
+
+/*# sourceMappingURL=About.module.css.map */
